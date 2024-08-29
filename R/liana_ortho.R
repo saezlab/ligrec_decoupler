@@ -58,7 +58,6 @@ generate_homologs <- function(op_resource,
     symbols_dict <- get_homologene_dict(entities = entities,
                                         target_organism = target_organism)
 
-
     # Remove any missing antities
     if(is.null(.missing_fun)){
 
@@ -399,7 +398,7 @@ get_homologene_dict <- function(entities,
                                 id_type = "genesymbol"){
 
     # Load homology geneset
-    hg_gs <- homologene_download(target = !!target_organism,
+    hg_gs <- homologene_download(target = target_organism,
                                  source = 9606L, # always human
                                  id_type = !!id_type) %>%
         select(-hgroup) %>%
