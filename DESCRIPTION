@@ -90,6 +90,6 @@ Suggests:
     muscData,
     broom
 biocViews: scater, scran, SingleCellExperiment, ComplexHeatmap, muscData, ExperimentHub
-Remotes: sqjin/CellChat, saezlab/OmnipathR, saezlab/decoupleR, LTLA/basilisk.utils, LTLA/basilisk
-RoxygenNote: 7.2.3
+Remotes: sqjin/CellChat, saezlab/OmnipathR, saezlab/decoupleR, Bioconductor/basilisk.utils, Bioconductor/basilisk
+RoxygenNote: 7.3.0
 Config/testthat/edition: 3

@@ -58,7 +58,6 @@ generate_homologs <- function(op_resource,
     symbols_dict <- get_homologene_dict(entities = entities,
                                         target_organism = target_organism)
 
-
     # Remove any missing antities
     if(is.null(.missing_fun)){
 
@@ -254,7 +253,15 @@ recode.character2 <- function(.x,
                               .default = NULL,
                               .missing = NULL,
                               .missing_fun) {
+
     .x <- as.character(.x)
+
+    if (length(.x) == 0) {
+
+        return(.x)
+
+    }
+
     values <- rlang::list2(...)
     if (!all(rlang::have_name(values))) {
         bad <- which(!rlang::have_name(values)) + 1
@@ -399,7 +406,7 @@ get_homologene_dict <- function(entities,
                                 id_type = "genesymbol"){
 
     # Load homology geneset
-    hg_gs <- homologene_download(target = !!target_organism,
+    hg_gs <- homologene_download(target = target_organism,
                                  source = 9606L, # always human
                                  id_type = !!id_type) %>%
         select(-hgroup) %>%
