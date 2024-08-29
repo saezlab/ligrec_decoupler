@@ -253,7 +253,15 @@ recode.character2 <- function(.x,
                               .default = NULL,
                               .missing = NULL,
                               .missing_fun) {
+
     .x <- as.character(.x)
+
+    if (length(.x) == 0) {
+
+        return(.x)
+
+    }
+
     values <- rlang::list2(...)
     if (!all(rlang::have_name(values))) {
         bad <- which(!rlang::have_name(values)) + 1
