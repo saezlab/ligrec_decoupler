@@ -19,7 +19,7 @@ remotes::install_github('saezlab/liana')
 
   
 ## Tutorial
-See a [tutorial](https://saezlab.github.io/liana/articles/liana_tutorial.html) how to use LIANA to run any combination of 7 methods, plus their consensus, and 16 different resources!
+See a [tutorial](https://saezlab.github.io/liana/articles/liana_tutorial.html) on how to use LIANA to run any combination of 7 methods, plus their consensus, and 16 different resources!
 The tutorial with the test data takes minutes to complete!    
   
 Additional tutorials:  
@@ -77,7 +77,7 @@ The tools implemented in this repository are:
 - `consensus_rank` of the predictions is also provided using the [RobustRankAggregate](https://pubmed.ncbi.nlm.nih.gov/22247279/) method
   
   
-*The scoring systems from these methods were re-implemented in LIANA in order to account for multi-meric complexes, simplify the calls to the individual pipelines, or reduce any possible inconsistencies and redundancies in their downstream integration. If you wish to run LIANA with the original tools please see [LIANA++](https://saezlab.github.io/liana/articles/liana_devel.html).
+*The scoring systems from these methods were re-implemented in LIANA in order to account for multimeric complexes, simplify the calls to the individual pipelines, or reduce any possible inconsistencies and redundancies in their downstream integration. If you wish to run LIANA with the original tools please see [LIANA++](https://saezlab.github.io/liana/articles/liana_devel.html).
   
 $ Default methods in LIANA.
 
@@ -117,20 +117,20 @@ filtered to additional quality control steps including literature support, compl
 All the resources above are retrieved from [OmniPath](https://omnipathdb.org/),
 and more specifically [OmnipathR](https://github.com/saezlab/OmnipathR).
 However, individual resources retrieved from the OmniPath web service are not to be affected by this,
-as each resource expected to be identical to its original form, apart from minor processing steps.
+as each resource is expected to be identical to its original form, apart from minor processing steps.
   
 `OmniPath` itself serves as a composite CCC resource combining all the ones listed
 above + [more](https://doi.org/10.15252/msb.20209923). `OmniPath` also collects
 further information about the roles and localisation of proteins in intercellular communication.
 
 We made use of this information to generate the `Consensus` resource.
-To obtain more information how we filtered the default `Consensus` resource,
+To obtain more information on how we filtered the default `Consensus` resource,
 as well as to explore custom filter options see [customizing OmniPath resources](https://saezlab.github.io/liana/articles/liana_custom_op.html).  
   
   
 ## LIANA++
-If you are interested in making use of the LIANA architecture for your own method, [this vignette](https://saezlab.github.io/liana/articles/liana_devel.html) provides instructions how to obtain a comprehensive table of LR statistics, which can then be used by custom scoring functions.
-In the [same vignette](https://saezlab.github.io/liana/articles/liana_devel.html) are also instructions how to install and run the original methods via a convenient R wrapper, e.g. for their benchmark.
+If you are interested in making use of the LIANA architecture for your own method, [this vignette](https://saezlab.github.io/liana/articles/liana_devel.html) provides instructions on how to obtain a comprehensive table of LR statistics, which can then be used by custom scoring functions.
+In the [same vignette](https://saezlab.github.io/liana/articles/liana_devel.html) are also instructions on how to install and run the original methods via a convenient R wrapper, e.g. for their benchmark.
   
 
   
@@ -141,7 +141,7 @@ We appreciate any feedback, so please do not hesitate to open an issue on the [l
   
 ## NEWS
 
-<strong> We are commited to the further development of LIANA and we refer the users to 
+<strong> We are committed to the further development of LIANA and we refer the users to 
 the [NEWS page](https://github.com/saezlab/liana/blob/master/NEWS.md)! </strong>
   
   
@@ -153,4 +153,4 @@ Dimitrov, D., Türei, D., Garrido-Rodriguez M., Burmedi P.L., Nagai, J.S., Boys,
 Türei, D., Valdeolivas, A., Gul, L., Palacio‐Escat, N., Klein, M., Ivanova, O., Ölbei, M., Gábor, A., Theis, F., Módos, D. and Korcsmáros, T., 2021. Integrated intra‐and intercellular signaling knowledge for multicellular omics analysis. Molecular systems biology, 17(3), p.e9923.
 https://doi.org/10.15252/msb.20209923
   
-#### Similarly, please consider citing any of the methods and/or resources implemented in liana, that were particularly relevant for your research!
+#### Similarly, please consider citing any of the methods and/or resources implemented in LIANA, that were particularly relevant to your research!
