@@ -77,7 +77,7 @@ The tools implemented in this repository are:
 - `consensus_rank` of the predictions is also provided using the [RobustRankAggregate](https://pubmed.ncbi.nlm.nih.gov/22247279/) method
   
   
-*The scoring systems from these methods were re-implemented in LIANA in order to account for multi-meric complexes, simplify the calls to the individual pipelines, or reduce any possible inconsistencies and redundancies in their downstream integration. If you wish to run LIANA with the original tools please see [LIANA++](https://saezlab.github.io/liana/articles/liana_devel.html).
+*The scoring systems from these methods were re-implemented in LIANA in order to account for multimeric complexes, simplify the calls to the individual pipelines, or reduce any possible inconsistencies and redundancies in their downstream integration. If you wish to run LIANA with the original tools please see [LIANA++](https://saezlab.github.io/liana/articles/liana_devel.html).
   
 $ Default methods in LIANA.
 
